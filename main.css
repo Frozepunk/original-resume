@@ -86,6 +86,11 @@ i {
     transform: translate(-50%,-50%);
     transition: .5;
 }
-.content:hover ~ .cursor2{
-    opacity: 0;
+.content:hover ~ .cursor1{
+    transform: translate(-50%,-50%) scale (1.5);
+    background-color: #c6c6c6;
+    opacity: .5;
 }
+ .content:hover ~.cursor2{
+    opacity: 0;
+ }
