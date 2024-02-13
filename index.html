@@ -26,6 +26,7 @@
         <p>
             <font face="Open Sans">
                 <u><em><h3>Profile</h3></em></u>
+                
                 <i>
                     Hello, I'm Prajwal N, a cybersecurity enthusiast actively participating in Capture The Flag challenges. 
                     Currently in my 4th semester of BCA, I have a strong academic background with a 7.89/10 CGPA. 
@@ -69,13 +70,14 @@
             </font>
         </p>
     </div>
+    </div>
     <div class="cursor1"></div>
     <div class="cursor2"></div>
     <script>
         var cursor1 = document.querySelector(".cursor1");
         var cursor2 = document.querySelector(".cursor2");
         document.addEventListener("mousemove", function(e) {
-            cursor1.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+            cursor1.style.transform = cursor2.style.transform = "translate(-50%, -50%) translate(" + e.clientX + "px, " + e.clientY + "px)";
         });
     </script>
 </body>
